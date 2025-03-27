@@ -73,7 +73,6 @@ header .btn-download:hover {
 /* HERO SECTION */
 
 #hero {
-  background-color: #000;
   padding: 50px;
   position: relative;
 }
@@ -155,4 +154,118 @@ header .btn-download:hover {
 
 .sobre-text p {
   font-size: 1.2rem;
+}
+
+/* Gallery Section */
+#peoples-running {
+  padding: 50px 0;
+  background-color: #213e5b;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery img {
+  width: 1200px;
+}
+
+/* Inspire-se Section */
+#inspire-se {
+  padding: 100px 0;
+  /* background-color: #213e5b; */
+  text-align: center;
+  position: relative;
+}
+
+#inspire-se::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/runner-silhouette.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+/*  Serviços Section */
+#servicos {
+  padding: 50px 0;
+  color: #fff;
+}
+
+.servicos-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.servico-item {
+  text-align: center;
+}
+
+.servico-item img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.servico-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.servico-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+/* Fácil Acesso Section */
+#facil-acesso {
+  padding: 50px 0;
+  color: #fff;
+}
+
+.facil-acesso-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.facil-acesso-text h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.facil-acesso-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.facil-acesso-text ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.facil-acesso-image img {
+  width: 500px;
+  border-radius: 10px;
+}
+
+/* Conquiste Seus Objetivos Section */
+#conquiste-objetivos {
+  padding: 50px 0;
+  color: #fff;
+}
+
+.objetivos-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
