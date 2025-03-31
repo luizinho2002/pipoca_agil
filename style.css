@@ -343,17 +343,18 @@ header .btn-download:hover {
 
 #cta .btn-cta {
   display: inline-block;
-  padding: 15px 30px;
-  background-color: #000;
-  color: #fff;
-  border: none;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #000;
+  border: 2px solid #000;
   border-radius: 5px;
   font-weight: bold;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 #cta .btn-cta:hover {
   background-color: #333;
+  color: #fff;
 }
 
 /* Footer */
@@ -362,16 +363,10 @@ footer {
   background-color: #071019;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .footer-cols {
   display: flex;
   justify-content: space-between;
-  gap: 40px; /* Espaço entre as colunas */
+  gap: 40px;
 }
 
 .col {
@@ -379,12 +374,7 @@ footer {
 }
 
 .footer-logo {
-  width: 200px; /* Tamnho da logo */
-  margin-bottom: 20px;
-}
-
-.col h3 {
-  font-size: 1.5rem;
+  width: 100px;
   margin-bottom: 20px;
 }
 
@@ -405,9 +395,9 @@ footer {
 
 .col input[type="email"] {
   padding: 10px;
-  border: 1px solid #fff;
+  border: 1px solidr #fff;
   border-radius: 5px;
-  width: 300px;
+  width: 350px;
   margin-right: 10px;
 }
 
@@ -423,7 +413,7 @@ footer {
 }
 
 .col button:hover {
-  background-color: #ffcc00; /* Laranja claro no hover */
+  background-color: #ffcc00;
 }
 
 .footer-bottom {
@@ -455,6 +445,5 @@ footer {
 }
 
 .social-links img {
-  width: 40px;
-  color: #fff;
+  width: 24px;
 }
