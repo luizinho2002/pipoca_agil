@@ -361,6 +361,8 @@ header .btn-download:hover {
 footer {
   padding: 50px 0 20px;
   background-color: #071019;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer-cols {
@@ -374,90 +376,66 @@ footer {
   flex: 1;
 }
 
-/* .col:first-child .footer-logo {
-  display: none;
-} */
-
-.col:nth-child(2) ul {
-  list-style: none;
-  padding: 0;
-}
-
-.col:nth-child(2) ul li {
-  margin-bottom: 10px;
-  color: #fff;
-  font-size: 0.9rem;
-}
-
-.col:nth-child(3) ul {
-  list-style: none;
-  padding: 0;
-}
-
-.col:nth-child(3) ul li {
-  margin-bottom: 10px;
-  color: #fff;
-  font-size: 0.9rem;
-}
-
-.col:last-child ul {
-  list-style: none;
-  padding: 0;
-}
-
-.col:last-child ul li {
-  margin-bottom: 10px;
-  color: #fff;
-  font-size: 0.9rem;
-}
-
-.col:last-child ul li:first-child {
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
 .col h3 {
   font-size: 1rem;
   margin-bottom: 15px;
   color: #fff;
 }
 
-.col form {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
+.col ul {
+  list-style: none;
+  padding: 0;
 }
 
-.col input[type="email"] {
-  padding: 10px;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  width: 100%;
-  max-width: 250px;
-  margin-right: 10px;
-  background-color: transparent;
+.col ul li {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
   color: #fff;
 }
 
-.col input[type="email"]::placeholder {
-  color: #ccc;
+/* Newsletter */
+.col p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  line-height: 1.4;
 }
 
-.col button {
-  padding: 10px 20px;
-  background-color: #ff9900;
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
   color: #000;
-  border: none;
+  width: 100%;
+  max-width: 200px;
+}
+
+.newsletter-form input::placeholder {
+  color: #aaa;
+}
+
+.btn-assinar {
+  background-color: transparent;
+  color: #ff9900;
+  border: 2px solid #ff9900;
   border-radius: 5px;
+  padding: 10px 20px;
   font-weight: bold;
-  transition: background-color 0.3s;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
-.col button:hover {
-  background-color: #ffcc00;
+.btn-assinar:hover {
+  background-color: rgba(255, 153, 0, 0.1);
 }
 
+/* Rodapé inferior */
 hr {
   border: none;
   border-top: 1px solid #333;
@@ -466,17 +444,27 @@ hr {
 
 .footer-bottom {
   display: flex;
-  flex-direction: row;
-  /* align-items: center; */
-  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   gap: 20px;
 }
 
-.social-links {
+.footer-bottom p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer-links {
   display: flex;
-  gap: 20px;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.social-links img {
-  width: 24px;
+.footer-links a {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 0.9rem;
 }
