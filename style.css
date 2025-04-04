@@ -179,7 +179,12 @@ header .btn-download:hover {
 .sobre-image img {
   width: 500px;
   height: 300px;
-  object-fit: cover;
+  /* object-fit: cover; */
+}
+
+.sobre-text {
+  max-width: 600px;
+  flex: 1;
 }
 
 .sobre-text h2 {
@@ -517,14 +522,4 @@ hr {
   width: 24px;
   height: 24px;
   filter: brightness(0) invert(1);
-}
-
-/* ==================== MEDIA QUERIES ==================== */
-
-/* Dispositivos grandes (laptops/desktops, 992px e acima) */
-@media only screen and (max-width: 1200px) {
-  .sobre-image img {
-    width: 450px;
-    height: auto;
-  }
 }
