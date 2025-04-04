@@ -73,7 +73,7 @@ header .btn-download {
 }
 
 header .btn-download:hover {
-  background-color: #ffcc00;
+  background-color: #ffca3a;
   color: #fff;
 }
 
@@ -150,6 +150,7 @@ header .btn-download:hover {
 
 .hero-text .btn-hero:hover {
   background-color: #ffcc00;
+  color: #fff;
 }
 
 .hero-image {
@@ -164,6 +165,7 @@ header .btn-download:hover {
 #sobre {
   padding: 50px 0;
   color: #000;
+  position: relative;
 }
 
 #sobre.bg-orange {
@@ -343,23 +345,28 @@ header .btn-download:hover {
 
 #cta .btn-cta {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: transparent;
-  color: #000;
-  border: 2px solid #000;
-  border-radius: 5px;
+  width: 292px;
+  height: 48px;
+  padding: 10px;
+  font-size: 16px;
   font-weight: bold;
-  transition: background-color 0.3s, color 0.3s;
+  color: #000;
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 #cta .btn-cta:hover {
-  background-color: #333;
+  background-color: #000;
   color: #fff;
 }
 
 /* Footer */
 footer {
-  padding: 50px 0 20px;
+  padding: 40px 20px;
   background-color: #071019;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
@@ -367,8 +374,8 @@ footer {
 
 .footer-cols {
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
+  justify-content: space-between; /* Distribui espaço igualmente entre as colunas */
+  gap: 40px; /* Espaço horizontal entre as colunas */
   margin-bottom: 100px;
 }
 
@@ -377,11 +384,11 @@ footer {
   padding: 0;
   margin: 0;
   width: 100%;
+  cursor: pointer;
 }
 
-.col {
-  flex: 1;
-  min-width: 0;
+.footer-col ul li:hover {
+  text-decoration: underline;
 }
 
 .col h3 {
@@ -402,7 +409,7 @@ footer {
 /* Newsletter */
 .col p {
   font-size: 0.9rem;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   line-height: 1.4;
 }
 
@@ -415,11 +422,11 @@ footer {
 .newsletter-form input[type="email"] {
   padding: 10px 15px;
   border: 1px solid #ccc;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #fff;
   color: #000;
-  width: 100%;
-  max-width: 200px;
+  width: 100%; /* Preenche todo o espaço disponível */
+  max-width: 300px; /* Limita o tamanho máximo da caixa de texto */
 }
 
 .newsletter-form input::placeholder {
@@ -438,10 +445,10 @@ footer {
 }
 
 .btn-assinar:hover {
-  background-color: rgba(255, 153, 0, 0.1);
+  background-color: #ffca3a;
+  color: #fff;
 }
 
-/* Rodapé inferior */
 hr {
   border: none;
   border-top: 1px solid #333;
