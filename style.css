@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap");
+
 /* RESET */
 * {
   margin: 0;
@@ -160,40 +162,63 @@ header .btn-download:hover {
 
 /* SOBRE SECTION */
 #sobre {
+  position: relative; /* Necessário para posicionar a imagem absolutamente */
+  min-height: 100vh; /* Garante que a seção tenha pelo menos a altura da tela */
+  background-color: #ff9900; /* Fundo amarelo */
+  display: flex; /* Para o texto */
+  align-items: center;
+  justify-content: space-between;
   padding: 50px 0;
-  color: #000;
-  position: relative;
-}
-
-#sobre.bg-orange {
-  background-color: #ff9900;
 }
 
 .sobre-content {
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  align-items: center;
+  width: 100%; /* Garante que os elementos ocupem toda a largura */
+}
+
+.sobre-image {
+  position: absolute; /* Posiciona a imagem absolutamente */
+  top: 0;
+  left: 0;
+  width: 50%; /* A imagem ocupa metade da largura */
+  height: 100%; /* A imagem ocupa toda a altura */
+  overflow: hidden; /* Corta qualquer parte da imagem que ultrapasse */
 }
 
 .sobre-image img {
-  width: 500px;
-  height: 300px;
-  /* object-fit: cover; */
+  width: 100%; /* Preenche a largura */
+  height: 100%; /* Preenche a altura */
+  object-fit: cover; /* Ajusta a proporção sem distorcer */
+  display: block; /* Remove espaços extras */
 }
 
 .sobre-text {
-  max-width: 600px;
-  flex: 1;
+  flex: 1; /* O texto ocupa metade da largura */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza o texto verticalmente */
+  padding: 20px; /* Espaçamento interno para o texto */
+  margin-left: 50%; /* Empurra o texto para a direita */
+  box-sizing: border-box; /* Garante que o padding não aumente a largura */
+  color: #000;
+  line-height: 1.8; /* Aumenta o espaçamento entre linhas */
 }
 
 .sobre-text h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
 .sobre-text p {
-  font-size: 1.2rem;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 0%;
+  text-align: justify;
 }
 
 .sobre-text p span {
@@ -479,7 +504,7 @@ footer {
 
 hr {
   border: none;
-  border-top: 1px solid #333;
+  border-top: 1px solid #333; 
 }
 
 .footer-bottom {
