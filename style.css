@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   line-height: 1.6;
   color: #fff;
   background-color: #213e5b;
@@ -108,8 +108,8 @@ header .btn-download:hover {
 .hero-content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  min-height: 70vh;
+  align-items: flex-stact;
+  /* min-height: 70vh; */
 }
 
 #hero .hero-text {
@@ -174,6 +174,7 @@ header .btn-download:hover {
 .sobre-content {
   display: flex;
   width: 100%; /* Garante que os elementos ocupem toda a largura */
+  /* position: relative; */
 }
 
 .sobre-image {
@@ -183,6 +184,7 @@ header .btn-download:hover {
   width: 50%; /* A imagem ocupa metade da largura */
   height: 100%; /* A imagem ocupa toda a altura */
   overflow: hidden; /* Corta qualquer parte da imagem que ultrapasse */
+  transform: all 0.3s ease; /* Suaviza as transições de redimensionamento */
 }
 
 .sobre-image img {
@@ -197,32 +199,34 @@ header .btn-download:hover {
   display: flex;
   flex-direction: column;
   justify-content: center; /* Centraliza o texto verticalmente */
-  padding: 20px; /* Espaçamento interno para o texto */
+  padding: 20px 40px; /* Espaçamento interno para o texto */
   margin-left: 50%; /* Empurra o texto para a direita */
   box-sizing: border-box; /* Garante que o padding não aumente a largura */
-  color: #000;
-  line-height: 1.8; /* Aumenta o espaçamento entre linhas */
+  color: #12263a;
+  line-height: 1.6; /* Aumenta o espaçamento entre linhas */
 }
 
 .sobre-text h2 {
-  font-family: Roboto;
   font-weight: 600;
   font-size: 48px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: -0.5px;
+  margin-bottom: 15px;
+  color: #12263a;
 }
 
 .sobre-text p {
-  font-family: Roboto;
-  font-weight: 400;
   font-size: 24px;
-  line-height: 35px;
-  letter-spacing: 0%;
-  text-align: justify;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  word-break: normal;
+  color: #12263a;
+  margin-bottom: 1;
 }
 
 .sobre-text p span {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /* GALERIA SECTION */
@@ -504,7 +508,7 @@ footer {
 
 hr {
   border: none;
-  border-top: 1px solid #333; 
+  border-top: 1px solid #333;
 }
 
 .footer-bottom {
@@ -547,4 +551,69 @@ hr {
   width: 24px;
   height: 24px;
   filter: brightness(0) invert(1);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 576px) {
+  .container-header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  #sobre {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .sobre-text {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .footer .footer-cols {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Para tablets (largura máxima de 768px) */
+@media (max-width: 768px) {
+  .container-header {
+    padding: 20px;
+  }
+
+  header nav ul li a {
+    font-size: 1rem;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .hero-text .btn-hero {
+    width: auto;
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  footer .footer-bottom p,
+  footer-links a {
+    font-size: 0.8rem;
+  }
 }
