@@ -164,11 +164,14 @@ header .btn-download:hover {
 #sobre {
   position: relative; /* Necessário para posicionar a imagem absolutamente */
   min-height: 100vh; /* Garante que a seção tenha pelo menos a altura da tela */
-  background-color: #ff9900; /* Fundo amarelo */
   display: flex; /* Para o texto */
-  align-items: center;
+  align-items: center; 
   justify-content: space-between;
   padding: 50px 0;
+  background-image: url("images/bg-yellow.png"); /* Adiciona a imagem de fundo */
+  background-size: cover; /* Faz com que a imagem cubra toda a área */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
 }
 
 .sobre-content {
@@ -551,69 +554,4 @@ hr {
   width: 24px;
   height: 24px;
   filter: brightness(0) invert(1);
-}
-
-/* MEDIA QUERIES */
-@media (max-width: 576px) {
-  .container-header {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-
-  header nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-image img {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  #sobre {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .sobre-text {
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .footer .footer-cols {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-
-/* Para tablets (largura máxima de 768px) */
-@media (max-width: 768px) {
-  .container-header {
-    padding: 20px;
-  }
-
-  header nav ul li a {
-    font-size: 1rem;
-  }
-
-  .hero-text h2 {
-    font-size: 2rem;
-  }
-
-  .hero-text .btn-hero {
-    width: auto;
-    font-size: 0.9rem;
-    padding: 10px;
-  }
-
-  footer .footer-bottom p,
-  footer-links a {
-    font-size: 0.8rem;
-  }
 }
